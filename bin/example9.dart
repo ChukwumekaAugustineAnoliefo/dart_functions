@@ -1,7 +1,8 @@
-// Example 8: Anonymous Functions
+// Example 9: Higher-Order Function
+void execute(Function action) {
+  action();
+}
+
 void main() {
-  var numbers = [1, 2, 3, 4];
-  numbers.forEach((number) {
-    print("Number: $number");
-  });
+  execute(() => print("Action executed!"));
 }
